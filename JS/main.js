@@ -2,48 +2,48 @@
 
 const quizData = [  
     {
-        question: 'How old is Florin ?',
-        a: '10',
-        b: '17',
-        c: '26',
-        d: '110',
+        question: 'Qual maior campeão brasileiro ?',
+        a: 'São Paulo',
+        b: 'Gremio',
+        c: 'Palmeiras',
+        d: 'Flamengo',
         correct: 'c'
     },
 
     {
-        question: 'What is the most used programing language in 2019 ?',
-        a: 'Java',
-        b: 'C',
-        c: 'Python',
-        d: 'Javascript',
-        correct: 'd'
-    },
-
-    {
-        question: 'Who is the President of US ?',
-        a: 'Florin Pop',
-        b: 'Donald Trump',
-        c: 'Ivan Saldano',
-        d: 'Mihai Andrei',
+        question: 'Qual ultimo campeão brasileiro?',
+        a: 'Palmeiras',
+        b: 'Flamengo',
+        c: 'Santos',
+        d: 'Gremio',
         correct: 'b'
     },
 
     {
-        question: 'What does HTML stand for?',
-        a: 'Hypertext Markup Language',
-        b: 'Cascading Style Sheet',
-        c: 'Jason Object Notation',
-        d: 'Helicopters Terminals Motorboats Lamborginis',
+        question: 'Qual maior campeão da libertadores ?',
+        a: 'Independiente',
+        b: 'Boca Juniors',
+        c: 'São Paulo',
+        d: 'Penarol',
         correct: 'a'
     },
 
     {
-        question: 'What year was Javascript launched ?',
-        a: '1996',
-        b: '1995',
-        c: '1994',
-        d: 'none of the above',
-        correct: 'd'
+        question: 'Ultimo vice campeão da libertadores ?',
+        a: 'River Plate',
+        b: 'Gremio',
+        c: 'Flamengo',
+        d: 'Palmeiras',
+        correct: 'a'
+    },
+
+    {
+        question: 'Atual campeão da copa do brasil ?',
+        a: 'Athletico',
+        b: 'Plameiras',
+        c: 'Gremio',
+        d: 'Internacional',
+        correct: 'a'
     }
 
 ]
@@ -105,7 +105,7 @@ function nextQuestion () {
         loadQuiz();
     } else {
         quiz.innerHTML = `<h2>
-        You answered correctly at ${score}/5 question</h2>`
+        Você acertou ${score}/5 questões</h2>`
     }
 
 }
