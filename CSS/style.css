@@ -55,6 +55,14 @@ ul li label {
     cursor: pointer;
 }
 
+.botoes {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     background-color: #8e44ad;
     border: none;
@@ -65,6 +73,8 @@ button {
     font-size: 1.1rem;
     width: 100%;
     padding: 1.5rem;
+
+
 }
 
 button:hover {
