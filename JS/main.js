@@ -57,7 +57,10 @@ const d_text = document.getElementById('d_text');
 const answerEl = document.querySelectorAll('.answer');
 
 
-const btnSubmit = document.getElementById('submit')
+
+const btnNewQuestion = document.getElementById('newQuestion');
+const btnSubmit = document.getElementById('submit');
+
 
 let currentQuiz = 0;
 let score = 0;
@@ -126,3 +129,70 @@ btnSubmit.addEventListener('click', () => {
     
     }
 });
+
+btnNewQuestion.addEventListener('click', function(){
+    quiz.innerHTML = `
+
+    <div class="quiz-header" >
+            <h2 id="question">Nova questão</h2>
+        <div class="newQuestion">
+            
+            <label for="title">Título da questão</label>
+            <input type="text" id="title" >
+            
+
+            <label for="a_new">Alternativa - A</label>
+            <input type="text" id="a_new" >
+
+            <label for="b_new">Alternativa - B</label>
+            <input type="text" id="b_new" >
+
+
+            <label for="c_new">Alternativa - C</label>
+            <input type="text" id="c_new" >
+
+            <label for="d_new">Alternativa - D</label>
+            <input type="text" id="d_new" >
+
+            
+
+    
+        </div>
+
+    </div>
+
+<div class="botoes">
+       
+    <button type="submit" id="createQuestion">Criar nova questão </button>
+
+
+</div>
+ 
+    `
+
+    const btnCreateQuestion = document.getElementById('createQuestion');
+    const titleEl = document.getElementById('title');
+    const altAEl = document.getElementById('a_new');
+    const altBEl = document.getElementById('b_new');
+    const altCEl = document.getElementById('c_new');
+    const altDEl = document.getElementById('d_new');
+
+
+
+    btnCreateQuestion.addEventListener('click', function(){
+  
+  
+        const title = titleEl.value;
+        const altA = altAEl.value;
+        const altB = altBEl.value;
+        const altC = altCEl.value;
+        const altD = altDEl.value;
+
+        console.log(title, altA, altB, altC, altD)
+        
+
+      
+ 
+       
+    })
+})

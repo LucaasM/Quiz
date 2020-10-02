@@ -80,3 +80,31 @@ button {
 button:hover {
     background-color: #732d91;
 }
+
+.newQuestion {
+   
+    padding: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.newQuestion input {
+    margin: 10px 0;
+    padding: 0.3rem;
+    width: 100%;
+
+    border: none;
+    border-bottom: solid 1px;
+}
+
+
+#createQuestion {
+    margin-top: 20px;
+    width: 106%;
+}
+
