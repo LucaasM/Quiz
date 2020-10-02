@@ -154,6 +154,9 @@ btnNewQuestion.addEventListener('click', function(){
             <label for="d_new">Alternativa - D</label>
             <input type="text" id="d_new" >
 
+
+            <label for="correct_new">Alternativa correta</label>
+            <input type="text" id="correct_new" >
             
 
     
@@ -164,6 +167,7 @@ btnNewQuestion.addEventListener('click', function(){
 <div class="botoes">
        
     <button type="submit" id="createQuestion">Criar nova questão </button>
+    <button type="submit" id="createQuestion"><a href= "../index.html">Ir para o Quiz</a></button>
 
 
 </div>
@@ -176,6 +180,7 @@ btnNewQuestion.addEventListener('click', function(){
     const altBEl = document.getElementById('b_new');
     const altCEl = document.getElementById('c_new');
     const altDEl = document.getElementById('d_new');
+    const altCorrectEl = document.getElementById('correct_new')
 
 
 
@@ -187,10 +192,27 @@ btnNewQuestion.addEventListener('click', function(){
         const altB = altBEl.value;
         const altC = altCEl.value;
         const altD = altDEl.value;
+        const altCorrect = altCorrectEl.value;
+       
+        quizData[quizData.length] = {
+            question: title,
+            a: altA,
+            b: altB,
+            c: altC,
+            d: altD,
+            correct: altCorrect
+        }
 
-        console.log(title, altA, altB, altC, altD)
-        
 
+
+        titleEl.value = "";
+        altAEl.value = "";
+        altBEl.value = ""
+        altCEl.value = "";
+        altDEl.value = "";
+        altCorrectEl.value = "";
+
+       
       
  
        
